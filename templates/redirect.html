@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>URL Shortener | tgbao.me</title>
+        <meta name="description" content="URL Shortener is used to reduce a long link. Shorten links and then share them to your friend :D">
+        <meta name="keywords" content="url, shortener, url shortener, short url, cut url, url short, reduce url">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="URL Shortener | tgbao.me">
+        <meta property="og:url" content="https://su.tgbao.me/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://su.tgbao.me/assets/img/shorturl-icon.jpg">
+
+        <link href="assets/js/518.690fd5.js" rel="preload" as="script">
+        <link href="assets/css/base.css" type="text/css" rel="stylesheet" />
+        <link href="assets/css/9f2705.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-primary">
+            <a class="navbar-brand" href="/">
+                Shortener URL
+            </a>
+        </nav>
+        <div class="container py-4 px-2 sm:px-4 xl:px-4">
+            <div class="my-14 xl:my-16">
+                <div class="max-w-4xl mx-auto" keep-alive="">
+                    <div class="rounded-md bg-white shadow space-y-6 text-center p-6 overflow-hidden">
+                        <div class="flex justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="animate-spin lex-shrink-0 w-12 h-12" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1zm4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5z"></path>
+                            </svg></div>
+                        <h3 class="text-xxl font-bold">We're are redirecting you to:</h3>
+                        <div class="alert alert-info text-base truncate">{{ url }}</div>
+                        <div>
+                            <button type="button" class="alert alert-success inline-flex items-center px-4 py-2 text-gray-600 hover:text-white border border-indigo-500 rounded-md hover:bg-indigo-600 transition">Go</button>
+                        </div>
+
+                        <script>
+                            setTimeout(function() {
+                                location.href = '{{ url }}';
+                            }, 3000);
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
